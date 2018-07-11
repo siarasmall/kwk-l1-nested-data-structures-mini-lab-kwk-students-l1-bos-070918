@@ -8,7 +8,13 @@ ingredients = [
 
 def sandwich_request(ingredients, order) 
   # your code here!
-end
+    result = TRUE 
+  order.each do |orderingredient|
+    if ingredients.!include?"orderingredient"
+      return result = FALSE
+    end #if
+  end #do
+end #def
 
 # example city_info hash
 cities = {
@@ -36,4 +42,10 @@ cities = {
 
 def city_populations(cities)
   # your code here!
+  ny = cities[:new_york][:population]
+  la = cities[:los_angeles][:population]
+  mi = cities[:miami][:population]
+  chic = cities[:chicago][:population]
+  sum = ny + la + mi + chic 
+  returns sum
 end
